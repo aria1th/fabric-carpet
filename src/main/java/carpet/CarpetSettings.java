@@ -694,6 +694,7 @@ public class CarpetSettings
                 int vd = (newValue >= 2)?newValue:((DedicatedServer) server).getProperties().viewDistance;
                 if (vd != server.getPlayerManager().getViewDistance())
                     server.getPlayerManager().setViewDistance(vd);
+					server.getPlayerManager().setSimulationDistance(vd); //this
                 return newValue;
             }
             else
